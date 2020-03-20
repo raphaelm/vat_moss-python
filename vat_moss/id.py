@@ -197,7 +197,7 @@ def validate(vat_id):
             </soapenv:Envelope>
         ''' % (country_prefix, number)
 
-        request = Request('http://ec.europa.eu/taxation_customs/vies/services/checkVatService')
+        request = Request('https://ec.europa.eu/taxation_customs/vies/services/checkVatService')
         request.add_header('Content-Type', 'application/x-www-form-urlencoded; charset=utf-8')
 
         try:
